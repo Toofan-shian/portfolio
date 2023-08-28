@@ -1,8 +1,11 @@
 <template>
   <v-app>
     <Header></Header>
-    <Hero></Hero>
-    <skills></skills>
+    <v-main>
+      <Hero></Hero>  
+      <skills></skills>
+      <Projects></Projects>
+    </v-main>
   </v-app>
 </template>
 

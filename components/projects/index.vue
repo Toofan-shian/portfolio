@@ -1,7 +1,15 @@
 <template>
-  <div>
+  <v-container
+    class="bg-grey-darken-4 py-16"
+    fluid
+  >
+    <h3 class="text-h3 text-center w-100">
+      My Projects
+    </h3>
 
-  </div>
+    <ProjectsSingle></ProjectsSingle>
+    <ProjectsSingle></ProjectsSingle>
+  </v-container>
 </template>
 
 <script setup lang="ts">

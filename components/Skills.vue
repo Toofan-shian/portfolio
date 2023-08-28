@@ -1,8 +1,8 @@
 <template>
-  <v-container class="bg-grey-darken-3 py-10" fluid>
-    <v-row class="justify-center py-8">
+  <v-container class="bg-grey-darken-3 py-16" fluid>
+    <v-row class="justify-center pb-8">
 
-      <h3 class="w-100 text-center text-h4 pb-10 mt-n2">
+      <h3 class="w-100 text-center text-h3 py-8 mb-4">
         Technologies I Work With
       </h3>
       
