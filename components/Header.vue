@@ -8,6 +8,7 @@
       >
         {{ section.name }}
       </v-btn>
+      <v-btn class="">{{ display.name }}</v-btn>
     </v-toolbar-items>
   </v-app-bar>
 </template>
@@ -15,6 +16,9 @@
 
 
 <script setup>
+import {useDisplay} from 'vuetify'
+
+let display = useDisplay();
 
 let sections = ref([
   {name: 'Skills', link: ''},
