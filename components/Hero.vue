@@ -4,7 +4,7 @@
     fluid
   >
     <v-row
-      class="py-8 "
+      class="py-8 py-md-10 py-lg-14 py-xl-16"
     >
 
       <v-col
@@ -37,15 +37,19 @@
           variant="outlined"
           color="orange"
         >
-          more about me {{ display.name }}
+          more about me
         </v-btn>
       </v-col>
 
       <v-col
-        class=" pa-0 "
-        cols="12"
+        class="pa-0 mb-6 mb-md-0"
+        cols="6"
+        sm="4"
         md="4"
         lg="3"
+        offset="3"
+        offset-sm="4"
+        offset-md="0"
       >
         <HeroIllustration></HeroIllustration>
       </v-col>
@@ -58,7 +62,6 @@
 import {useDisplay} from 'vuetify'
 let hello = ref('< Hello World />')
 let display = useDisplay()
-console.log(display.name)
 </script>
 
 <style scoped>
