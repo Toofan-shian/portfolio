@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="bg-grey-darken-4 py-8 py-md-16 border-r"
+    class="bg-grey-darken-4 py-8 py-md-16"
     fluid
   >
     <v-row

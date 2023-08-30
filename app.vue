@@ -5,7 +5,6 @@
       <Hero></Hero>  
       <skills></skills>
       <Projects></Projects>
-      <div style="height: 10000px;"></div>
     </v-main>
   </v-app>
 </template>

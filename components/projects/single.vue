@@ -28,6 +28,7 @@
 
           <v-card-actions>
             <v-btn
+            
               class=""
               variant="outlined"
               color=""
