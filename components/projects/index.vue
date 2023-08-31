@@ -6,8 +6,8 @@
       My Projects
     </h3>
 
-    <ProjectsSingle></ProjectsSingle>
-    <!-- <ProjectsSingle></ProjectsSingle> -->
+    <ProjectsNuxify></ProjectsNuxify>
+    <ProjectsGuitarShop></ProjectsGuitarShop>
   </v-container>
 </template>
 

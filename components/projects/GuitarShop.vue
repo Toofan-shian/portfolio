@@ -14,7 +14,6 @@
           class="d-flex flex-column justify-center"
           order="2"
           cols="12"
-          order-sm="first"
           sm="6"
 
         >
@@ -31,11 +30,12 @@
               class="text-lg-subtitle-1"
             >
               <ul class="ml-4 ml-sm-2">
-                <li class="pb-lg-1">Nuxt 3</li>
-                <li class="pb-lg-1">Vue 3</li>
-                <li class="pb-lg-1">Vuetify 3</li>
-                <li class="pb-lg-1">Pinia</li>
-                <li class="pb-lg-1">Fetch from API</li>
+                <li class="pb-lg-1">Vue 2</li>
+                <li class="pb-lg-1">Vuetify 2</li>
+                <li class="pb-lg-1">Vuex</li>
+                <li class="pb-lg-1">Vue Router</li>
+                <li class="pb-lg-1">Node (express)</li>
+                <li class="pb-lg-1">MongoDB</li>
               </ul>
             </v-card-text>
   
@@ -68,7 +68,7 @@
           cols-sm="6"
         >
           <v-img
-            src="/nuxify-hero.png"
+            src="/guitar-shop-hero.png"
             class="rounded-lg"
             style="max-height: 222px;"
           ></v-img>
