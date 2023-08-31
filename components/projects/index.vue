@@ -7,7 +7,7 @@
     </h3>
 
     <ProjectsSingle></ProjectsSingle>
-    <ProjectsSingle></ProjectsSingle>
+    <!-- <ProjectsSingle></ProjectsSingle> -->
   </v-container>
 </template>
 
