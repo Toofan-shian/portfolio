@@ -6,7 +6,7 @@
       <skills></skills>
       <Projects></Projects>
       <About></About>
-      <!-- <Contact></Contact> -->
+      <Contact></Contact>
     </v-main>
   </v-app>
 </template>
