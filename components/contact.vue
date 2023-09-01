@@ -1,6 +1,9 @@
 <template>
-  <div class="h-screen">
-  </div>
+  <v-container
+    class="border-r"
+  >
+  Thank you for visiting my portfolio website and feel free to contact me if you have any questions or feedback.
+  </v-container>
 </template>
 
 <script setup lang="ts">

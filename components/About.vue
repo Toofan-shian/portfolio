@@ -1,7 +1,8 @@
 <template>
   <v-container
-    class=""
+    class="mb-16"
   >
+    <!-- TITLE -->
     <v-row
       class=""
     >
@@ -12,6 +13,7 @@
       </h2>
     </v-row>
 
+    <!-- TEXT & Illustration -->
     <v-row
       class=""
     >
@@ -19,30 +21,50 @@
         class="px-4 px-sm-8 px-md-4"
       >
         <p>
-          Hi, I’m a frontend developer who loves creating beautiful and functional web based platforms.
-          Until two years ago, I was a musician and an English teacher, 
-          until I found my passion in programming and decided to pursue this career. 
+          Hi, my name is Toofan, I’m a frontend developer who loves creating beautiful and functional web based platforms.<br/>
+          Until two years ago, I was a musician and an English teacher,
+          until I found my passion in programming and decided to pursue this career.<br/> 
           I love learning new things every day and keeping up with the latest trends and technologies in web development. 
-          I enjoy working in a team environment and collaborating with other developers. 
-          I am an on-time person and I care about time and punctuality. 
+          I enjoy working in a team environment and collaborating with other developers.<br/> 
+          I am an on-time person and I care about time and punctuality. <br/>
           I have experience in using Nuxt, Vue, and Vuetify to build responsive and user-friendly websites. 
-          You can check out some of my projects below. 
-          Thank you for visiting my portfolio website and feel free to contact me if you have any questions or feedback.
         </p>
       </v-col>
 
       <v-col
         v-if="display.mdAndUp.value"
-        class="pa-0 d-flex align-center"
+        class="pa-0 d-flex flex-column align-center justify-center"
         cols="3"
+        lg="4"
       >
         <div
-          class=" w-100 "
+          class=" w-100 mt-md-n4 mt-lg-0"
           style=""
         >
           <AboutIllustration ></AboutIllustration>
         </div>
+        <v-btn
+          variant="outlined"
+          color="orange"
+          class="mx-auto mt-4"
+        >
+          my projects
+        </v-btn>
       </v-col>
+    </v-row>
+
+    <!-- ACTION -->
+    <v-row
+      class="px-4 mt-8 px-16"
+      v-if="display.smAndDown.value"
+    >
+      <v-btn
+        variant="outlined"
+        color="orange"
+        class="w-50 mx-auto"
+      >
+        my projects
+      </v-btn>
     </v-row>
   </v-container>
 </template>
