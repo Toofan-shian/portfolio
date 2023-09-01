@@ -1,58 +1,84 @@
 <template>
   <v-container
-    class=" my-4"
+    class="mt-4 mb-10"
   >
 
-  <v-row
-    class=""
-  >
-    <h2
-      class="text-h3 text-center w-100 py-8"
-    >
-      Contact Me
-    </h2>
-  </v-row>
-
-  <v-row
-    class=""
-  >
-    <v-col
+    <!-- TITLE -->
+    <v-row
       class=""
-      cols="5"
     >
-      <ContactIllustration></ContactIllustration>
       <h2
-        class="text-h5 "
+        class="text-h3 text-center w-100 py-2"
       >
-        Thanks for visiting<br/>
+        Contact Me
       </h2>
+    </v-row>
 
-    </v-col>
-
-    <v-col
+    <!-- CONTENT -->
+    <v-row
       class=""
     >
-      <v-form
-        class="px-8"
+      <!-- TEXT & ILL -->
+      <v-col
+        class=""
+        cols="12"
       >
-        <v-text-field
-          variant="outlined"
-        ></v-text-field>
-
-        <v-textarea
-          variant="outlined"
-        ></v-textarea>
-
-        <v-btn
-          class="w-100"
-          color="orange"
-          variant="outlined"
+        <v-row
+          class="d-flex justify-start px-4 align-center"
         >
-          Submit
-        </v-btn>
-      </v-form>
-    </v-col>
-  </v-row>
+          <h2
+            class="text-subtitle-2 text-center mr-2 w-100 mb-5"
+          >
+            I am happy you have visited my website<br/>
+            I hope I will hear from you
+          </h2>
+          <!-- <ContactIllustration style="max-width: 60px;"></ContactIllustration> -->
+
+          <!-- <v-col
+            class="align-center d-flex "
+          >
+            <h2
+              class="text-h6 border-r"
+            >
+              Lets Get In Touch
+            </h2>
+          </v-col>
+
+          <v-col
+
+          >
+            <ContactIllustration></ContactIllustration>
+          </v-col> -->
+        </v-row>
+      </v-col>
+
+      <v-col
+        class=""
+      >
+        <v-form
+          class="px-4 "
+        >
+          <v-text-field
+            variant="outlined"
+            label="Your name or your company"
+          ></v-text-field>
+
+          <v-textarea
+            variant="outlined"
+            label="Your message"
+            placeholder=""
+          ></v-textarea>
+
+          <v-btn
+            class="w-100"
+            color="orange"
+            variant="outlined"
+          >
+            Submit
+          </v-btn>
+        </v-form>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
