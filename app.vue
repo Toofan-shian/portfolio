@@ -5,6 +5,8 @@
       <Hero></Hero>  
       <skills></skills>
       <Projects></Projects>
+      <About></About>
+      <Contact></Contact>
     </v-main>
   </v-app>
 </template>

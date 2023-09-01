@@ -1,6 +1,6 @@
 <template>
   <v-row
-    class="mb-8"
+    class=""
     no-gutters
   >
     <v-card

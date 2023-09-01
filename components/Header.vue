@@ -24,7 +24,7 @@ let sections = ref([
   {name: 'Skills', link: ''},
   {name: 'Projects', link: ''},
   {name: 'About', link: ''},
-  {name: 'Contact Me', link: ''},
+  {name: 'Contact', link: ''},
 ])
 </script>
 
