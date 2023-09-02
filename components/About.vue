@@ -48,7 +48,7 @@
           color="orange"
           class="mx-auto mt-4"
         >
-          my projects
+        let's talk
         </v-btn>
       </v-col>
     </v-row>
@@ -63,7 +63,7 @@
         color="orange"
         class="w-50 mx-auto"
       >
-        my projects
+        let's talk
       </v-btn>
     </v-row>
   </v-container>

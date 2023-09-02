@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="mt-4 mb-10"
+    class="mt-4 mt-sm-16 mb-10"
   >
 
     <!-- TITLE -->
@@ -8,7 +8,7 @@
       class=""
     >
       <h2
-        class="text-h3 text-center w-100 py-2"
+        class="text-h3 text-center w-100 py-2 mb-sm-9 mb-lg-10 pt-sm-8"
       >
         Contact Me
       </h2>
@@ -20,43 +20,33 @@
     >
       <!-- TEXT & ILL -->
       <v-col
-        class=""
+        class="pa-0  pl-sm-8 pr-sm-4 pa-md-3 d-flex flex-column align-start align-md-center justify-start"
         cols="12"
+        sm="5"
+        md="6"
       >
-        <v-row
-          class="d-flex justify-start px-4 align-center"
+        <div
+          class="w-100"
         >
           <h2
-            class="text-subtitle-2 text-center mr-2 w-100 mb-5"
+            class="text-subtitle-2 text-md-h6 text-center text-sm-start w-100 mb-5"
           >
             I am happy you have visited my website<br/>
             I hope I will hear from you
           </h2>
-          <!-- <ContactIllustration style="max-width: 60px;"></ContactIllustration> -->
+  
+          <ContactIllustration
+            v-if="display.smAndUp.value"
+          ></ContactIllustration>
 
-          <!-- <v-col
-            class="align-center d-flex "
-          >
-            <h2
-              class="text-h6 border-r"
-            >
-              Lets Get In Touch
-            </h2>
-          </v-col>
-
-          <v-col
-
-          >
-            <ContactIllustration></ContactIllustration>
-          </v-col> -->
-        </v-row>
+        </div>
       </v-col>
 
       <v-col
-        class=""
+        class="px-6 px-sm-0 pr-sm-8 pt-sm-0 pa-md-3"
       >
         <v-form
-          class="px-4 "
+          class=" "
         >
           <v-text-field
             variant="outlined"
@@ -83,7 +73,9 @@
 </template>
 
 <script setup lang="ts">
+import {useDisplay} from 'vuetify'
 
+let display = useDisplay()
 </script>
 
 <style scoped>
