@@ -20,7 +20,7 @@
       <v-col
         class="px-4 px-sm-8 px-md-4"
       >
-        <p>
+        <p class="text-body-1">
           Hi, my name is Toofan, I’m a frontend developer who loves creating beautiful and functional web based platforms.<br/>
           Until two years ago, I was a musician and an English teacher,
           until I found my passion in programming and decided to pursue this career.<br/> 
@@ -48,7 +48,7 @@
           color="orange"
           class="mx-auto mt-4"
         >
-        let's talk
+          let's talk
         </v-btn>
       </v-col>
     </v-row>
@@ -76,13 +76,9 @@ let display = useDisplay()
 let showIll = ref(true)
 
 watch(display.name, () => {
-  console.log(display.name.value)
-  console.log('xs:', display.mdAndUp.value)
   if (display.mdAndUp.value) {
     showIll.value = true
   } else showIll.value = false;
-
-  console.log(showIll.value)
 })
 
 </script>

@@ -8,6 +8,7 @@
       <About></About>
       <Contact></Contact>
     </v-main>
+    <FooterSec></FooterSec>
   </v-app>
 </template>
 
