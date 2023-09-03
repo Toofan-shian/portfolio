@@ -1,13 +1,19 @@
 <template>
   <v-container
-    class="bg-grey-darken-4 py-16"
+    id="projects"
+    class="bg-grey-darken-4 py-16 d-flex justify-center"
   >
+    <div
+      class=" w-100"
+      style="max-width: 1200px;"
+    >
     <h3 class="text-h3 text-center w-100 mb-12">
       My Projects
     </h3>
 
     <ProjectsNuxify></ProjectsNuxify>
     <ProjectsGuitarShop></ProjectsGuitarShop>
+    </div>
   </v-container>
 </template>
 

@@ -7,19 +7,21 @@
     >
 
       <v-col
-        class=" d-flex flex-column justify-center justify-md-center align-center align-md-start "
+        class=" d-flex flex-column justify-center justify-md-center align-center align-md-start align-xl-center"
         cols="12"
         order="1"
         order-md="first"
         md="7"
         lg="5"
         offset-lg="1"
+        xl="4"
+        offset-xl="2"
       >
         <div
           class="d-flex flex-column align-center align-md-start "
         >
           <h1
-            class="text-h3 text-md-h2 text-xl-h1 mb-4"
+            class="text-h3 text-md-h2 text-xl-h2 mb-4"
           >
             {{ hello }}
           </h1>
@@ -31,7 +33,7 @@
           </h3>
         
           <p class="text-h6 ml-md-4">
-            I Love Building Cool Interfaces
+            Passionate About Building Cool Interfaces
           </p>
           <v-btn
             class="my-5 my-md-6 mx-auto mx-md-0 ml-md-4"
@@ -44,16 +46,20 @@
       </v-col>
 
       <v-col
-        class="pa-0 mb-6 mb-md-0 "
+        class="pa-0 mb-6 mb-md-0 pa-lg-8 pa-xl-16"
         cols="6"
         sm="4"
         md="5"
         lg="5"
+        xl="4"
         offset="3"
         offset-sm="4"
         offset-md="0"
       >
-        <HeroIllustration></HeroIllustration>
+        <v-img
+          src="/responsive.png"
+          class="w-100"
+        ></v-img>
       </v-col>
 
     </v-row>

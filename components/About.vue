@@ -1,71 +1,79 @@
 <template>
   <v-container
-    class="mb-16"
+    id="about"
+    class="mb-16 d-flex justify-center"
+    max-width="1100"
   >
-    <!-- TITLE -->
-    <v-row
+    <div
       class=""
+      style="max-width: 1200px;"
     >
-      <h2
-        class="text-h3 text-center w-100 py-8"
-      >
-        About Me
-      </h2>
-    </v-row>
 
-    <!-- TEXT & Illustration -->
-    <v-row
-      class=""
-    >
-      <v-col
-        class="px-4 px-sm-8 px-md-4"
+      <!-- TITLE -->
+      <v-row
+        class=""
       >
-        <p class="text-body-1">
-          Hi, my name is Toofan, I’m a frontend developer who loves creating beautiful and functional web based platforms.<br/>
-          Until two years ago, I was a musician and an English teacher,
-          until I found my passion in programming and decided to pursue this career.<br/> 
-          I love learning new things every day and keeping up with the latest trends and technologies in web development. 
-          I enjoy working in a team environment and collaborating with other developers.<br/> 
-          I am an on-time person and I care about time and punctuality. <br/>
-          I have experience in using Nuxt, Vue, and Vuetify to build responsive and user-friendly websites. 
-        </p>
-      </v-col>
-
-      <v-col
-        v-if="display.mdAndUp.value"
-        class="pa-0 d-flex flex-column align-center justify-center"
-        cols="3"
-        lg="4"
-      >
-        <div
-          class=" w-100 mt-md-n4 mt-lg-0"
-          style=""
+        <h2
+          class="text-h3 text-center w-100 py-8"
         >
-          <AboutIllustration ></AboutIllustration>
-        </div>
+          About Me
+        </h2>
+      </v-row>
+  
+      <!-- TEXT & Illustration -->
+      <v-row
+        class=""
+      >
+        <v-col
+          class="px-4 px-sm-8 px-md-4"
+        >
+          <p class="text-body-1">
+            Hi, my name is Toofan, I’m a frontend developer who loves creating beautiful and functional web based platforms.<br/>
+            Until two years ago, I was a musician and an English teacher,
+            until I found my passion in programming and decided to pursue this career.<br/> 
+            I love learning new things every day and keeping up with the latest trends and technologies in web development. 
+            I enjoy working in a team environment and collaborating with other developers.<br/> 
+            I am an on-time person and I care about time and punctuality. <br/>
+            I have experience in using Nuxt, Vue, and Vuetify to build responsive and user-friendly websites. 
+          </p>
+        </v-col>
+  
+        <v-col
+          v-if="display.mdAndUp.value"
+          class="pa-0 d-flex flex-column align-center justify-center"
+          cols="3"
+          lg="4"
+        >
+          <div
+            class=" w-100 mt-md-n4 mt-lg-0"
+            style=""
+          >
+            <AboutIllustration ></AboutIllustration>
+          </div>
+          <v-btn
+            variant="outlined"
+            color="orange"
+            class="mx-auto mt-4"
+          >
+            let's talk
+          </v-btn>
+        </v-col>
+      </v-row>
+  
+      <!-- ACTION -->
+      <v-row
+        class="px-4 mt-8 px-16"
+        v-if="display.smAndDown.value"
+      >
         <v-btn
           variant="outlined"
           color="orange"
-          class="mx-auto mt-4"
+          class="w-50 mx-auto"
         >
           let's talk
         </v-btn>
-      </v-col>
-    </v-row>
-
-    <!-- ACTION -->
-    <v-row
-      class="px-4 mt-8 px-16"
-      v-if="display.smAndDown.value"
-    >
-      <v-btn
-        variant="outlined"
-        color="orange"
-        class="w-50 mx-auto"
-      >
-        let's talk
-      </v-btn>
-    </v-row>
+      </v-row>
+    </div>
   </v-container>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <v-container
+    id="skills"
     class="bg-grey-darken-3 pa-0 ma-0 "
     fluid
   >

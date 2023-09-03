@@ -1,11 +1,10 @@
 <template>
   <v-row
-    class=""
+    class="justify-center"
     no-gutters
   >
     <v-card
       class="project-card  w-100 rounded-lg pa-4 pa-md-8 pa-lg-10 text-white "
-  
     >
       <v-row
         class="d-flex"

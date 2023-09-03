@@ -1,7 +1,6 @@
 <template>
   <v-app-bar
     class="bg-grey-darken-3"
-    scroll-behavior="hide"
   >
     <v-toolbar-items class="mx-auto">
       <v-btn
@@ -9,6 +8,7 @@
         v-for="section in sections"
         :key="section.name"
         :size="buttonSize"
+        @click="() => scrollTo(section.name)"
       >
         {{ section.name }}
       </v-btn>
@@ -36,11 +36,23 @@ watch(display.name, () => {
 console.log(display.xs.value ? 'small' : 'regular')
 
 let sections = ref([
-  {name: 'Skills', link: ''},
-  {name: 'Projects', link: ''},
-  {name: 'About', link: ''},
-  {name: 'Contact', link: ''},
+  {name: 'skills', link: ''},
+  {name: 'projects', link: ''},
+  {name: 'about', link: ''},
+  {name: 'contact', link: ''},
 ])
+
+let scrollTo = target => {
+  let targetEl = document.getElementById(target)
+  let offset = 50;
+  let targetTop = targetEl.getBoundingClientRect().top
+  let finalPos = targetTop + window.scrollY - offset
+
+  window.scrollTo({
+    top: finalPos,
+    behavior: 'smooth'
+  })
+}
 </script>
 
 
