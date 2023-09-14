@@ -27,13 +27,11 @@ let buttonSize = ref('default')
 watch(display.name, () => {
   if(display.xs.value) {
     buttonSize.value = 'small'
-    console.log('smalled')
   } else {
     buttonSize.value ='default'
   }
 })
 
-console.log(display.xs.value ? 'small' : 'regular')
 
 let sections = ref([
   {name: 'skills', link: ''},

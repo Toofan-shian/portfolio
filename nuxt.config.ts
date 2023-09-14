@@ -5,4 +5,7 @@ export default defineNuxtConfig({
     '@invictus.codes/nuxt-vuetify',
     '@nuxtjs/google-fonts',
   ],
+  runtimeConfig: {
+    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
+  }
 })

@@ -50,36 +50,19 @@
         <v-col
           class="px-6 px-sm-0 pr-sm-8 pt-sm-0 pa-md-3"
         >
-          <v-form
-            class=" "
-          >
-            <v-text-field
-              variant="outlined"
-              label="Your name or your company"
-            ></v-text-field>
 
-            <v-textarea
-              variant="outlined"
-              label="Your message"
-              placeholder=""
-            ></v-textarea>
-
-            <v-btn
-              class="w-100"
-              color="orange"
-              variant="outlined"
-            >
-              Submit
-            </v-btn>
-          </v-form>
+          <contactForm></contactForm>
         </v-col>
       </v-row>
+
+      
     </div>
   </v-container>
 </template>
 
 <script setup lang="ts">
 import {useDisplay} from 'vuetify'
+
 
 let display = useDisplay()
 </script>
