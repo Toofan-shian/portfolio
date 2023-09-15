@@ -19,6 +19,11 @@
 
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+  font-family: 'Cutive Mono', monospace !important; 
+}
 .border-r {
   border: 1px solid red;
 }

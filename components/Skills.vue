@@ -1,7 +1,7 @@
 <template>
   <v-container
     id="skills"
-    class="bg-grey-darken-3 pa-0 ma-0 "
+    class="bg-grey-darken-3 pa-0 ma-0 mt-n8 mt-sm-0"
     fluid
   >
     <v-parallax
@@ -12,10 +12,16 @@
       <v-row class="skills-row flex-column justify-center  ma-0  h-100">
   
         <h3
-          class=" text-center text-h4 text-md-h3 align-center mb-sm-3 mb-md-1 py-7"
+          class=" text-center text-h3 text-sm-h4 text-md-h3 text-xl-h3 align-center pb-sm-8 pb-sm-10 mb-md-1 pt-8 pt-sm-0"
         >
-          Technologies I Work With
+          Technologies {{ display.smAndUp.value ? 'I Work With' : '' }}
         </h3>
+        <p
+          v-if="display.xs.value"
+          class="text-center text-subtitle-1 align-center mb-sm-3 mb-md-1 pb-7"
+        >
+          I Work With
+        </p>
         
         <div
           class=" d-flex justify-center flex-wrap"
@@ -131,7 +137,7 @@ let changeIconSize = () => {
       break;
     
     default:
-      iconSize.value = '55px'
+      iconSize.value = '84px'
       break;
   }
 }

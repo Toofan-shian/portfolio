@@ -7,12 +7,13 @@
         class=""
         v-for="section in sections"
         :key="section.name"
-        :size="buttonSize"
+        :size="display.smAndUp.value ? 'default' : 'small'"
         @click="() => scrollTo(section.name)"
       >
         {{ section.name }}
       </v-btn>
     </v-toolbar-items>
+    <!-- <span>{{ display.name }}</span> -->
   </v-app-bar>
 </template>
 
@@ -24,9 +25,9 @@ import {useDisplay} from 'vuetify'
 let display = useDisplay();
 let buttonSize = ref('default')
 
-watch(display.name, () => {
+watch(display.name.value, () => {
   if(display.xs.value) {
-    buttonSize.value = 'small'
+    buttonSize.value = 'x-small'
   } else {
     buttonSize.value ='default'
   }

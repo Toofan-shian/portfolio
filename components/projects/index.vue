@@ -7,7 +7,7 @@
       class=" w-100"
       style="max-width: 1200px;"
     >
-    <h3 class="text-h3 text-center w-100 mb-12">
+    <h3 class="text-h3 text-md-h3 text-center w-100 mb-12">
       My Projects
     </h3>
 
