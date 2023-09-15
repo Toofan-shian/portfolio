@@ -39,8 +39,9 @@
             class="my-5 my-md-6 mx-auto mx-md-0 ml-md-4"
             variant="outlined"
             color="orange"
+            @click="() => scrollTo('skills')"
           >
-            more about me
+            explore
           </v-btn>
         </div>
       </v-col>
@@ -70,6 +71,18 @@
 import {useDisplay} from 'vuetify'
 let hello = ref('< Hello World />')
 let display = useDisplay()
+
+let scrollTo = targetId => {
+  let targetEl = document.getElementById(targetId)
+  let offset = 50;
+  let targetTop = targetEl.getBoundingClientRect().top
+  let finalPos = targetTop + window.scrollY - offset
+
+  window.scrollTo({
+    top: finalPos,
+    behavior: 'smooth'
+  })
+}
 </script>
 
 <style scoped>

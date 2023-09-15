@@ -44,6 +44,7 @@
                 size="small"
                 color="orange"
                 variant="outlined"
+                @click="goToGiutarShopGit"
               >
                 <v-icon class="mr-2" size="large">mdi-github</v-icon>
                 code
@@ -54,6 +55,8 @@
                 size="small"
                 variant="outlined"
                 color="orange"
+                @click="goToGuitarShop"
+
               >
                 <v-icon class="mr-2">mdi-monitor</v-icon>
                 live
@@ -78,7 +81,12 @@
 </template>
 
 <script setup lang="ts">
-
+let goToGuitarShop = () => {
+  window.open('https://guitar-shop.iran.liara.run', "_blank")
+}
+let goToGiutarShopGit = () => {
+  window.open('https://github.com/Toofan-shian/guitar-shop', "_blank")
+}
 </script>
 
 <style scoped>

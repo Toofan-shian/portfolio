@@ -44,6 +44,7 @@
                 size="small"
                 color="orange"
                 variant="outlined"
+                @click="goToNuxifyGit"
               >
                 <v-icon class="mr-2" size="large">mdi-github</v-icon>
                 code
@@ -54,6 +55,7 @@
                 size="small"
                 variant="outlined"
                 color="orange"
+                @click="goToNuxify"
               >
                 <v-icon class="mr-2">mdi-monitor</v-icon>
                 live
@@ -79,6 +81,13 @@
 
 <script setup lang="ts">
 
+let goToNuxifyGit = () => {
+  window.open('https://github.com/Toofan-shian/nuxt-store', '_blank')
+}
+
+let goToNuxify = () => {
+  window.open('https://nuxify-shop.iran.liara.run', '_blank')
+}
 </script>
 
 <style scoped>

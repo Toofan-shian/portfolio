@@ -4,17 +4,19 @@
       @submit.prevent="submitForm"
     >
       <v-text-field
+        id="textField"
         v-model="name"
-        name="name"
+        name="email"
+        placeholder="example@gmail.com"
         variant="outlined"
-        label="Your name or your company"
+        label="Your Email"
       ></v-text-field>
 
       <v-textarea
         v-model="message"
         name="message"
         variant="outlined"
-        label="Your message"
+        label="Your Message"
         placeholder=""
       ></v-textarea>
 
@@ -55,6 +57,7 @@
 
 
 <script setup lang="ts">
+import eventBus from '~/eventBus';
 
 let feedback = ref(true)
 let feedbackMessage = ref('')
@@ -96,4 +99,14 @@ let showFeedback = (msg: string, color: string) => {
     feedback.value = false;
   }, 3000)
 }
+
+let focus = () => {
+  let field = document.getElementById('textField')
+  field.focus()
+  console.log('event run')
+}
+
+onMounted(() => {
+  eventBus.on('focus', focus)
+})
 </script>

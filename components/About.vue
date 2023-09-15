@@ -54,6 +54,7 @@
             variant="outlined"
             color="orange"
             class="mx-auto mt-4"
+            @click="emitFocus"
           >
             let's talk
           </v-btn>
@@ -69,6 +70,7 @@
           variant="outlined"
           color="orange"
           class="w-50 mx-auto"
+          @click="emitFocus"
         >
           let's talk
         </v-btn>
@@ -79,6 +81,7 @@
 
 <script setup lang="ts">
 import {useDisplay} from 'vuetify'
+import eventBus from '~/eventBus';
 
 let display = useDisplay()
 let showIll = ref(true)
@@ -89,6 +92,22 @@ watch(display.name, () => {
   } else showIll.value = false;
 })
 
+let scrollTo = targetId => {
+  let targetEl = document.getElementById(targetId)
+  let offset = 50;
+  let targetTop = targetEl.getBoundingClientRect().top
+  let finalPos = targetTop + window.scrollY - offset
+
+  window.scrollTo({
+    top: finalPos,
+    behavior: 'smooth'
+  })
+}
+
+let emitFocus = () => {
+  eventBus.emit('focus')
+  scrollTo('contact')
+}
 </script>
 
 <style scoped>
