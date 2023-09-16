@@ -14,7 +14,7 @@
         class=""
       >
         <h2
-          class="text-h3 text-center w-100 py-8"
+          class="text-h3 text-center w-100 py-8 pb-lg-12"
         >
           About Me
         </h2>

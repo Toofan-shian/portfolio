@@ -1,6 +1,7 @@
 <template>
     <v-form
-      class=" "
+      class=""
+      style="font-family: 'Roboto', sans-serif;"
       @submit.prevent="submitForm"
     >
       <v-text-field
@@ -59,7 +60,7 @@
 <script setup lang="ts">
 import eventBus from '~/eventBus';
 
-let feedback = ref(true)
+let feedback = ref(false)
 let feedbackMessage = ref('')
 let feedbackColor = ref('')
 let name = ref('')

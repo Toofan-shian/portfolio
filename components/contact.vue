@@ -13,7 +13,7 @@
         class=""
       >
         <h2
-          class="text-h3 text-center w-100 py-2 mb-sm-9 mb-lg-10 pt-sm-8"
+          class="text-h3 text-center w-100 py-2 mb-sm-9 mb-lg-10 pb-lg-4 pt-sm-8"
         >
           Contact Me
         </h2>

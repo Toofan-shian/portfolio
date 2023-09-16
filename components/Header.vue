@@ -25,7 +25,7 @@ import {useDisplay} from 'vuetify'
 let display = useDisplay();
 let buttonSize = ref('default')
 
-watch(display.name.value, () => {
+watch(display.name, () => {
   if(display.xs.value) {
     buttonSize.value = 'x-small'
   } else {

@@ -12,7 +12,7 @@
       <v-row class="skills-row flex-column justify-center  ma-0  h-100">
   
         <h3
-          class=" text-center text-h3 text-sm-h4 text-md-h3 text-xl-h3 align-center pb-sm-8 pb-sm-10 mb-md-1 pt-8 pt-sm-0"
+          class=" text-center text-h3 text-sm-h4 text-md-h3 text-xl-h3 align-center pb-sm-8 pb-sm-10 pb-lg-12 mb-md-1 pt-8 pt-sm-0"
         >
           Technologies {{ display.smAndUp.value ? 'I Work With' : '' }}
         </h3>
