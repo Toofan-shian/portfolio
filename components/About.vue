@@ -28,7 +28,7 @@
           class="px-4 px-sm-8 px-md-4"
         >
           <p class="text-body-1">
-            Hi, my name is Toofan, I’m a frontend developer who loves creating beautiful and functional web based platforms.<br/>
+            Hi, my name is Toofan Shafian, I’m a frontend developer who loves creating beautiful and functional web based platforms.<br/>
             Until two years ago, I was a musician and an English teacher,
             until I found my passion in programming and decided to pursue this career.<br/> 
             I love learning new things every day and keeping up with the latest trends and technologies in web development. 

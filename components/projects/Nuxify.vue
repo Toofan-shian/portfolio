@@ -34,7 +34,7 @@
                 <li class="pb-lg-1">Vue 3</li>
                 <li class="pb-lg-1">Vuetify 3</li>
                 <li class="pb-lg-1">Pinia</li>
-                <li class="pb-lg-1">Fetch from API</li>
+                <li class="pb-lg-1">MongoDB</li>
               </ul>
             </v-card-text>
   

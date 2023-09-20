@@ -26,13 +26,13 @@
           </h1>
         
           <h3
-            class="text-h5 mb-1 ml-md-4 body"
+            class="text-h5 mb-1 ml-md-4"
           >
             I'm a FrontEnd Developer
           </h3>
         
-          <p class="text-subtitle-1 ml-md-4 body">
-            Passionate About Building Cool Interfaces
+          <p class="text-subtitle-1 text-sm-h6 ml-md-4">
+            passionate about bringing designs to life
           </p>
           <v-btn
             class="my-5 my-md-6 mx-auto mx-md-0 ml-md-4"
